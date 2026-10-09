@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#171b2a"><title>PHOTO LAB — База знаний</title><meta name="description" content="Регламент фотографа PHOTO LAB: обязанности, стандарты съёмки, ограничения и взаимодействие. Поиск по всем пунктам."><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script></head>
+<body>
+<a class="skip" href="#main">Перейти к регламенту</a>
+<aside id="sidebar" class="sidebar" aria-label="Навигация по ролям">
+<a class="brand" href="./"><span class="brand-symbol" aria-hidden="true">P<span>●</span></span><span>PHOTO LAB<small>База знаний команды</small></span></a>
+<button id="sidebar-collapse" class="sidebar-toggle" aria-label="Свернуть боковую панель" aria-expanded="true">☰</button><div class="side-label">РЕГЛАМЕНТЫ ПО РОЛЯМ</div>
+<nav id="roles"><button class="role active" data-role="Фотограф" aria-current="page"><span aria-hidden="true">◉</span>Фотограф<span class="role-count">11</span></button><button class="role" data-role="Печатник"><span aria-hidden="true">▤</span>Печатник</button><button class="role" data-role="Продажник"><span aria-hidden="true">▱</span>Продажник</button><button class="role" data-role="Старший смены"><span aria-hidden="true">◇</span>Старший смены</button><button class="role" data-role="Управляющий"><span aria-hidden="true">▦</span>Управляющий</button><button class="role" data-role="Офис"><span aria-hidden="true">▣</span>Офис</button></nav>
+<div class="side-bottom"><span class="small-label">ДЛЯ HR-МЕНЕДЖЕРА</span><a href="/admin" class="editor-button">Кабинет администратора</a><p>Редактирование регламентов и тестов.</p></div>
+</aside><button id="menu-backdrop" class="menu-backdrop" aria-label="Закрыть меню" hidden></button>
+<div class="workspace">
+<header class="topbar"><button id="mobile-menu" aria-label="Открыть меню ролей" aria-expanded="false">☰</button><span>Команда / Регламенты</span><span class="access"><span aria-hidden="true">◈</span> База знаний команды</span></header>
+<main id="main">
+<div class="page-heading"><div><div class="eyebrow">РАЗДЕЛ 06 · КОРПОРАТИВНАЯ КНИГА</div><h1 id="role-title">Регламент фотографа</h1><p id="role-subtitle">Все правила смены — под рукой.</p></div><div class="title-icon" aria-hidden="true">06<span>PHOTO TEAM</span></div></div>
+<div class="view-tabs" aria-label="Разделы роли"><button id="rules-tab" class="view-tab active" aria-pressed="true">Регламент</button><button id="tests-tab" class="view-tab" aria-pressed="false">Тестирование</button></div><section class="search-area" aria-label="Поиск по базе знаний"><label for="search">Найти правило</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Например, брак или телефон" autocomplete="off"><button id="clear" aria-label="Очистить поиск" hidden>×</button><kbd aria-hidden="true">/</kbd></div><p id="search-help">Поиск по регламентам всех ролей</p></section>
+<div id="rules-view"><div id="photographer">
+<section class="metrics" aria-label="Основные стандарты"><div><span class="metric-number">90<span>%</span></span><span>времени в зале</span></div><div><span class="metric-number">≤ 3 <span>мин</span></span><span>на одного ребёнка</span></div><div><span class="metric-number">5–15</span><span>кадров на ребёнка</span></div><div><span class="metric-number">≤ 15 <span>мин</span></span><span>до передачи карты</span></div></section>
+<div class="category-row" id="categories" aria-label="Тематические блоки"></div>
+<div class="results-head"><h2 id="results-title">Все правила</h2><span id="results-count" role="status" aria-live="polite"></span><button id="expand" class="text-button">Свернуть все</button></div>
+<div id="cards" class="cards"></div>
+<div id="no-results" class="empty-state" hidden><span aria-hidden="true">⌕</span><h2>Ничего не найдено</h2><p>Попробуйте другое слово или уберите фильтр по теме.</p><button id="reset" class="primary">Сбросить поиск и фильтр</button></div>
+</div>
+<section id="role-empty" class="empty-state" hidden><span aria-hidden="true">▤</span><h2>Регламент ещё не добавлен</h2><p>Материалы для этой роли пока отсутствуют.<br>Администратор может добавить их в кабинете.</p><button id="back" class="primary">Открыть регламент фотографа</button></section>
+</div><section id="quiz-view" hidden><div class="quiz-intro"><div><h2 id="quiz-heading">Проверка знаний</h2><p id="quiz-description">Выберите один ответ в каждом вопросе.</p></div><span id="quiz-count" class="quiz-count"></span></div><form id="quiz-form"><div id="quiz-questions"></div><div class="quiz-actions"><button id="quiz-submit" class="primary" type="submit">Проверить ответы</button><button id="quiz-retry" type="button" class="secondary" hidden>Пройти ещё раз</button></div></form><div id="quiz-result" role="status" aria-live="polite"></div><div id="quiz-empty" class="empty-state" hidden><h2>Тест пока не добавлен</h2><p>Вопросы для этой роли появятся после добавления администратором.</p></div></section><div id="load-error" class="empty-state" hidden><h2>Не удалось загрузить регламент</h2><p>Обновите страницу. При локальном запуске используйте команду из README.</p><button id="reload" class="primary">Повторить</button></div>
+<footer><span>PHOTO LAB <span aria-hidden="true">/</span> База знаний</span><span>PHOTO LAB · правила и проверка знаний</span></footer>
+</main>
+</div>
+
+</body></html>
